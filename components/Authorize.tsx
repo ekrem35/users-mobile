@@ -7,7 +7,7 @@ import { Actions } from 'react-native-router-flux'
 
 const Authorize = () => {
   React.useEffect(() => {
-    Actions.login()
+    Actions.replace('login')
   }, [])
   return null
 }
