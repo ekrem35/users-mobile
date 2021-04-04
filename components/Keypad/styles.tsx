@@ -12,5 +12,6 @@ export default StyleSheet.create({
     height: 50,
     maxHeight: 50
   },
-  columnStyle: { flexDirection: 'row', justifyContent: 'space-between' }
+  columnStyle: { flexDirection: 'row', justifyContent: 'space-between' },
+  keypadContainer: { marginVertical: 40 }
 })

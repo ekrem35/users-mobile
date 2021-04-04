@@ -41,7 +41,7 @@ interface keyPadProps {
 
 const KeyPad = (props: keyPadProps) => {
   return (
-        <View style={{ flex: 1 }}>
+        <View style={styles.keypadContainer}>
             <View style={styles.columnStyle}>
                 {[1, 2, 3].map((num, index) => (
                     <Button onPress={props.onPress} key={index} label={num} />
