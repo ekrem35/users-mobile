@@ -3,16 +3,21 @@
  */
 
 import React from 'react'
-import { Button, View } from 'react-native'
-import LinearGradient from 'react-native-linear-gradient'
+import { Content, Container, Text, View } from 'native-base'
+import GradientButton from '../../../components/GradientButton'
 
 const Login = () => {
   return (
-    <View style={{ flex: 1 }}>
-      <LinearGradient colors={['#9D73E9', '#5F70EC']}>
-        <Button title="ENTER" onPress={() => true} />
-      </LinearGradient>
-    </View>
+    <Container>
+      <Content contentContainerStyle={{ flex: 1, padding: 32 }}>
+        <View style={{ flex: 1 }}>
+          <Text>text</Text>
+        </View>
+        <View>
+          <GradientButton onPress={() => true} title="ENTER" />
+        </View>
+      </Content>
+    </Container>
   )
 }
 

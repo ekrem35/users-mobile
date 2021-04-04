@@ -4,10 +4,13 @@
 
 import React from 'react'
 import Router from './components/Router'
+import { Root } from 'native-base'
 
 const App = () => {
   return (
-    <Router />
+    <Root>
+     <Router />
+    </Root>
   )
 }
 
